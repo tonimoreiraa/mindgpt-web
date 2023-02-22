@@ -9,8 +9,8 @@ function Link({to, label}: {to: string, label: string})
 
 function Header()
 {
-    return <div className="fixed top-0 w-full h-16 bg-gradient-to-b from-primary to-transparent flex items-center justify-between md:px-24 px-4">
-        <div>Logo</div>
+    return <div className="fixed top-0 w-full h-16 bg-primary flex items-center justify-between md:px-24 px-4">
+        <img src={import.meta.env.BASE_URL + 'assets/mindgpt.svg'} className="h-10" />
         <div className="grid grid-flow-col items-center gap-x-8 text-sm text-indigo-200 font-light">
             <Link to="/" label="Início" />
             <Link to="/plans" label="Planos" />
