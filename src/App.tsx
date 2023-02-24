@@ -17,7 +17,7 @@ function App()
         <Route path="/" element={<Main />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/checkout" element={<Checkout />} />
-        <Route path="/checkout/confirm" element={<CheckoutConfirm />} />
+        <Route path="/checkout/complete" element={<CheckoutConfirm />} />
       </Routes>
       <Toaster />
     </AuthProvider>
