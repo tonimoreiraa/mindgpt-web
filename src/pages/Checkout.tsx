@@ -1,5 +1,4 @@
 import { loadStripe } from "@stripe/stripe-js";
-import { useQuery } from "react-query";
 import {PaymentElement, Elements, useStripe, useElements} from '@stripe/react-stripe-js';
 import api from "../services/api";
 import { useEffect, useState } from "react";
@@ -25,7 +24,7 @@ function Payment()
     }
 
     return <div className="flex items-center w-full">
-        <div className="p-24 max-w-[50rem]">
+        <div className="px-8 sm:px-24 max-w-[50rem]">
             <img src={import.meta.env.BASE_URL + 'assets/mindgpt.svg'} className="h-10 mb-4" />
             <h1 className="font-bold text-2xl">Detalhes do pagamento</h1>
             <h2 className="text-sm font-normal text-neutral-600">Insira seus dados de pagamento para continuar. Seus dados estão seguros e encriptados pela <a href="https://stripe.com" target="_blank" className="text-blue-500 underline">Stripe</a>.</h2>

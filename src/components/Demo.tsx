@@ -1,6 +1,6 @@
 function Demo()
 {
-    return <div className="px-24 py-16">
+    return <div className="px-8 sm:px-24 py-16">
         <h1 className="font-bold text-4xl text-center">Pare de perder tempo com tarefas longas e repetitivas.</h1>
         <h2></h2>
     </div>
